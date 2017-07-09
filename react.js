@@ -8,7 +8,8 @@ const App = React.createClass({
   render: function() {
     return React.createElement('div', null,
       React.createElement('h1', null, `Hello ${this.state.who}`),
-      React.createElement('input', { type: 'text' })
+      React.createElement('input', { type: 'text' }),
+      React.createElement('button', null, `Submit`)
     );
   }
 });
