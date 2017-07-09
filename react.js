@@ -1,12 +1,13 @@
-
-
+// let React = require('react');
+// let ReactDOM = require('react-dom');
+// console.log("working");
 const App = React.createClass({
   getInitialState: function() {
-      return ( {who: 'world'} );
+      return {who: 'world'};
   },
 
   render: function() {
-    React.createElement('div', null,
+    return React.createElement('div', null,
     React.createElement('h1', null, 'Hello ${this.state.who}'),
     React.createElement('input', {type: 'text'})
     );
@@ -14,6 +15,6 @@ const App = React.createClass({
 });
 
 ReactDOM.render(
-    createElement(App),
+    React.createElement(App),
     document.getElementById('app')
 );
