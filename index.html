@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+    <body>
+
+      <div id='app'></div>
+
+      <script>
+
+      const App = React.createClass({
+        getInitialState: function() {
+            return ( {who: 'world'} );
+        },
+
+        render: function() {
+          React.createElement('div', null,
+          React.createElement('h1', null, 'Hello ${this.state.who}'),
+          React.createElement('input', {type: 'text'})
+          );
+        }
+      });
+
+      ReactDOM.render(
+          createElement(App),
+          document.getElementById('app'),
+      );
+
+      </script>
+
+            <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+            <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+
+    </body>
+
+</html>
